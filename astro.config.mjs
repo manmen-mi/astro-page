@@ -7,5 +7,7 @@ import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), image(), prefetch(), solidJs()]
+  integrations: [tailwind(), image(), prefetch(), solidJs()],
+  site: 'https://manmen-mi.github.io',
+  base: '/me',
 });
