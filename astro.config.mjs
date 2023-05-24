@@ -9,5 +9,5 @@ import solidJs from "@astrojs/solid-js";
 export default defineConfig({
   integrations: [tailwind(), image(), prefetch(), solidJs()],
   site: 'https://manmen-mi.github.io',
-  base: '/me',
+  base: '/astro-page',
 });
