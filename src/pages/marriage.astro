@@ -6,17 +6,12 @@ import Introduce from '../components/Introduce.astro';
 ---
 
 <Layout title="招待状">
-	<main class="hero min-h-screen">
-		<!-- <img class="fixed top-0 opacity-50" src="1678401901112.jpg"> -->
-		<div class="hero-overlay bg-opacity-60 relative"></div>
-		<div class="hero-content text-center text-neutral-content bg-base-100">
-			<div class="flex flex-col overflow-auto [&>section]:h-[720px] snap-y snap-mandatory">
-				<HeaderImage></HeaderImage>
+	<main class="flex flex-col gap-16 h-screen snap-y snap-proximity [&>section]:snap-start overflow-y-scroll">
+		<HeaderImage></HeaderImage>
 
-				<Wedding></Wedding>
+		<Wedding></Wedding>
 
-				<Introduce></Introduce>
-			</div>
-		</div>
+		<Introduce></Introduce>
 	</main>
+
 </Layout>

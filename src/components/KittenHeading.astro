@@ -1,0 +1,11 @@
+---
+export interface Props {
+	message: string;
+}
+
+const { message } = Astro.props;
+---
+
+<h1 class="kitten text-3xl text-black border-b-4 border-black px-8 py-2">
+    { message }
+</h1>
