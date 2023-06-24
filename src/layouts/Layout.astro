@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="ja" class="w-screen">
+<html lang="ja" class="bg-white">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="My Wedding">
@@ -17,7 +17,7 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap">
 		<title>{title}</title>
 	</head>
-	<body data-theme="retro" class="w-full bg-white">
+	<body data-theme="retro" class="flex justify-center w-full max-w-screen-md bg-white mx-auto">
 		<slot />
 	</body>
 </html>
