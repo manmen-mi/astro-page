@@ -1,49 +1,22 @@
 ---
+import MainImage from '../components/MainImage.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="hero min-h-screen">
-		<img class="fixed top-0 opacity-50" src="1678401901112.jpg">
-		<div class="hero-overlay bg-opacity-60 relative"></div>
-		<div class="hero-content text-center text-neutral-content">
-			<div class="flex flex-col overflow-auto [&>section]:min-h-screen snap-y snap-mandatory">
-				<section>
-					<img class="w-full" src="1678401901112.jpg">
-					<h1 class="text-8xl">結婚しますで</h1>
-				</section>
-
-				<section>
-					<h1>結婚式時間</h1>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.0973362410405!2d135.5256160082183!3d34.68346101243729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0ccefe430f3%3A0x663f55d977462765!2z7Zi47L2U7L-gIOyLoOyCrA!5e0!3m2!1sko!2sjp!4v1686388198255!5m2!1sko!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</section>
-
-				<section>
-					<h1>食事会時間</h1>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1670.6532650673691!2d135.52535940988048!3d34.68183904580765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cb5ae46979%3A0xea8ef98059375a64!2z44CSNTQwLTAwMDcgT3Nha2EsIENodW8gV2FyZCwgQmFuYmFjaMWNLCAy4oiSMjQg77yr77yr77yyIO-8qO-8r--8tO-8pe-8rCDvvK_vvLPvvKHvvKvvvKE!5e0!3m2!1sko!2sjp!4v1686388294479!5m2!1sko!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</section>
-
-
-				<section class="grid grid-cols-2 grid-rows-2 text-black">
-					<Card>
-						<img src="/IMG_5907.jpg" alt="kimuho" class="mask mask-squircle">
-					</Card>
-					<Card>
-						<h1 class="text-3xl">きむほ</h1>
-						<span>1993/08/16</span>
-						<p>5살</p>
-					</Card>
-					<Card>
-						<h1 class="text-3xl">よしの</h1>
-						<span>1996/04/07</span>
-						<p>15살</p>
-					</Card>
-					<Card>
-						<img src="/PXL_20230412_113819225.jpg" alt="yoshino" class="mask mask-squircle">
-					</Card>
-				</section>
-			</div>
+<Layout title="for family">
+	<div class="flex items-center justify-center container h-screen mx-4 md:mx-auto">
+		<div class="flex flex-col md:flex-row items-center gap-4 p-6 rounded-lg shadow-2xl ring-2 ring-red-500">
+			<header class="rounded overflow-hidden">
+				<MainImage></MainImage>
+			</header>
+			<main class="flex flex-auto flex-col items-center justify-center text-center gap-2 px-20 slide-enter-content [&>*]:whitespace-nowrap [&>p]:text-md [&>p]:text-primary">
+				<h2 class="text-lg">The wedding of</h2>
+				<h1 class="kitten text-2xl">Hogi & Yoshi</h1>
+				<!-- <p></p>
+				<p>Thursday, July 4, 2019</p>
+				<p>123 Fake Street</p>
+				<p>Seattle, WA 98124</p> -->
+			</main>
 		</div>
-	</main>
+	</div>
 </Layout>
